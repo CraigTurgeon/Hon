@@ -1,0 +1,18 @@
+page-welcome {
+  #welcome {
+    background: color($colors, secondary);
+
+    .marginTop {
+      margin-top: 150px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin-top: 50px
+    }
+    .marginTop{
+      margin-top:50px;
+    }
+
+  }
+}

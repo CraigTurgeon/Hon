@@ -1,0 +1,89 @@
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="ReType Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="number" placeholder="Age"></ion-input>
+    </ion-item>
+
+    <ion-list radio-group>
+      <ion-list-header>
+        Gender
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio checked="true" value="male"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio value="female"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Trans/other</ion-label>
+        <ion-radio value="trans"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <div>additional relevant tags</div>
+    <ion-item>
+      <ion-label>Nurse/Doctor</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Realtor</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Programmer</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Finance</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Plumber</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Electrician</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Photographer</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Small Business Owner</ion-label>
+      <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <button ion-button block color="primary" class="marginTop" (click)="signupAndLogin()">Sign me up!</button>
+    <button ion-button block color="danger" (click)="cancel()">Cancel</button>
+
+  </ion-list>
+</ion-content>
