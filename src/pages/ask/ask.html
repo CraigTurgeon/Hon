@@ -7,5 +7,71 @@
 </ion-header>
 
 <ion-content padding>
+  <h3>I need an honest answer from a:</h3>
+  <ion-list radio-group [(ngModel)]="sex">
+    <ion-item>
+      <ion-label>Male</ion-label>
+      <ion-radio value="male" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-radio value="female"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Trans/Other</ion-label>
+      <ion-radio value="trans"></ion-radio>
+    </ion-item>
+  </ion-list>
+  <!--fix this later, dualKnobs isnt working for some reason-->
+  <ion-item>
+    <ion-label>Age Range: </ion-label>
+    <ion-range dualKnobs="true" [(ngModel)]="dualValueAge" min="18" max="99" step="1"></ion-range>
+  </ion-item>
 
+  <div>Other optional tags:</div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nurse/Doctor</ion-label>
+      <ion-checkbox [(ngModel)]="Nurse/Doctor"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Realtor</ion-label>
+      <ion-checkbox [(ngModel)]="Realtor" disabled="true"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Programmer</ion-label>
+      <ion-checkbox [(ngModel)]="Programmer"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Finance</ion-label>
+      <ion-checkbox [(ngModel)]="Finance"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Plumber</ion-label>
+      <ion-checkbox [(ngModel)]="Plumber"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Electrician</ion-label>
+      <ion-checkbox [(ngModel)]="Electrician"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Photographer</ion-label>
+      <ion-checkbox [(ngModel)]="Photographer"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Small Business Owner</ion-label>
+      <ion-checkbox [(ngModel)]="SmallBusinessOwner"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <div>Ask your question:</div>
+  <ion-textarea placeholder="Which picture should I eliminate from my online dating profile?/Which outfit looks better for a first date?"></ion-textarea>
+   <!--TODO  add support for uploading and reviewing images here-->
 </ion-content>
