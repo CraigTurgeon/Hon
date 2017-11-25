@@ -40,4 +40,12 @@ export class DataService {
             });
     }
 
+    register(url, data) {
+        return this.http.post(url, data)
+        .map(res => res.json())
+        .catch(err => {
+            return Observable.of(err.json());
+        });
+    }
+
 }
