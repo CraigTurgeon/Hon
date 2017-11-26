@@ -11,7 +11,7 @@ export class DataService {
         return this.http.post(url, data)
             .map(res => res.json())
             .catch(err => {
-                return Observable.of(err.json());
+                return Observable.of(err);
             });
     }
 
@@ -20,7 +20,7 @@ export class DataService {
         // return this.http.get(url)
         //     .map(res => res.json())
         //     .catch(err => {
-        //         return Observable.of(err.json());
+        //         return Observable.of(err);
         //     });
     }
 
@@ -28,7 +28,7 @@ export class DataService {
         return this.http.post(url, data)
             .map(res => res.json())
             .catch(err => {
-                return Observable.of(err.json());
+                return Observable.of(err);
             });
     }
 
@@ -36,7 +36,7 @@ export class DataService {
         return this.http.post(url, data)
             .map(res => res.json())
             .catch(err => {
-                return Observable.of(err.json());
+                return Observable.of(err);
             });
     }
 
@@ -44,7 +44,7 @@ export class DataService {
         return this.http.post(url, data)
         .map(res => res.json())
         .catch(err => {
-            return Observable.of(err.json());
+            return Observable.of(err);
         });
     }
 

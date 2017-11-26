@@ -21,14 +21,19 @@ export class LoginPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, private DataService: DataService) {}
 
   login() {
-    this.DataService.register('/api/login', this.user)
+    this.DataService.login('/api/login', this.user)
     .subscribe(result => {
-      this.navCtrl.push(TabsPage);
       console.log('result', result);
+      if (result.success) {
+        this.navCtrl.push(TabsPage);
+      } else {
+        //alert user of login failure/error
+      }
     }, err => {
       console.log('err', err);
     });
   }
+
   cancel() {
     this.navCtrl.push(WelcomePage);
   }
