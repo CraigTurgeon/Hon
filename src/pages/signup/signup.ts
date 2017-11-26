@@ -17,7 +17,7 @@ import { DataService } from '../../services/data-service';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
-  user;
+  user = {email: null, password: null};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private DataService: DataService) {
   }

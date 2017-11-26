@@ -2,5 +2,11 @@
   "name": "Hon",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "proxies": [
+    {
+      "path": "/",
+      "proxyUrl": "http://localhost:3000"
+    }
+  ]
 }
