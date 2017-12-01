@@ -9,6 +9,7 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { AskPage } from '../pages/ask/ask';
 import { AnswerPage } from '../pages/answer/answer';
+import { HistoryPage } from '../pages/history/history';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -25,6 +26,7 @@ import { DataService } from '../services/data-service';
     SignupPage,
     AskPage,
     AnswerPage,
+    HistoryPage,
     HomePage,
     TabsPage
   ],
@@ -41,6 +43,7 @@ import { DataService } from '../services/data-service';
     SignupPage,
     AskPage,
     AnswerPage,
+    HistoryPage,
     HomePage,
     TabsPage
   ],

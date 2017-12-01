@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DataService } from '../../services/data-service';
+//import { HistoryPage } '../pages/answer/history';
 
 @Component({
   selector: 'page-contact',

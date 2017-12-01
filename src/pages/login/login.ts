@@ -24,13 +24,13 @@ export class LoginPage {
     this.DataService.login('/api/login', this.user)
     .subscribe(result => {
       console.log('result', result);
-      if (result.success) {
+//      if (result.success) {
         this.navCtrl.push(TabsPage);
-      } else {
+ //     } else {
         //alert user of login failure/error
-      }
-    }, err => {
-      console.log('err', err);
+//      }
+//    }, err => {
+//      console.log('err', err);
     });
   }
 

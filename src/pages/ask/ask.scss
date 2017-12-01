@@ -1,3 +1,15 @@
 page-ask {
+  .primary {
+    background: color($colors, secondary);
+  }
+
+  .primary.list-header-md {
+    border-top: none;
+  }
+
+  .button {
+    background: color($colors, secondary);
+    color: black;
+  }
 
 }
